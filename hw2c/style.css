@@ -1,0 +1,50 @@
+body{
+    background-color: cornflowerblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container1{
+    background-color: blue;
+    height: 120px;
+}
+
+h3{
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: -2.5%;
+    left: 52%;
+    transform: translateX(-50%) translateY(50%);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+table{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 35%;
+    line-height: 1.8;
+    text-align: right;
+    table-layout: fixed;
+}
+
+table tr td:nth-child(even){
+    text-align: left;
+}
+
+.container3{
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+    height: 40px;
+    position: relative;
+
+}
+
+.button{
+    position: absolute;
+    text-align: center;
+    transform: translateX(-50%) translateY(50%);
+    left: 52%;
+    top: 10%;
+}

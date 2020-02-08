@@ -1,0 +1,107 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container0{
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    line-height: 10px;
+}
+
+h4{
+    text-transform: uppercase;
+    margin-left: 1%;
+}
+
+.container1{
+
+    display: block;
+    border: solid 1px lightgray;
+    margin-left: 5%;
+    margin-right: 50%;
+    height: 25%;
+}
+
+.container1 h4{ 
+    margin-top: -9px;
+    background-color: white;
+    width: 28%;
+}
+
+.container2{
+    display: block;
+    border: solid 1px lightgray;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 50%;
+    height: 40%;
+}
+
+.container2 h4{ 
+    margin-top: -9px;
+    background-color: white;
+    width: 38%;
+}
+
+.container3{
+
+    display: block;
+    border: solid 1px lightgray;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 50%;
+    height: 18%;
+}
+
+.container3 h4{ 
+    margin-top: -9px;
+    background-color: white;
+    width: 45%;
+}
+
+.container4{
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 50%;
+}
+
+button{
+
+    font-size: 1em;
+    padding: .75em;
+    border-radius: .5em;
+    background: linear-gradient(white, lightgray);
+    border-color: dodgerblue;
+    border-width: 2px;
+}
+
+table{
+
+    margin-left: 1%;
+    font-size: large;
+}
+
+table{
+    table-layout: fixed;
+    width: 40%;
+}
+
+
+table tr td{
+    height: 30px;
+    
+}
+
+.textbox{
+    width: 250px;
+}
+
+.animals{
+    width: 100%;
+}
+
+.star{
+
+    color: red;
+}
