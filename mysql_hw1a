@@ -1,0 +1,35 @@
+CREATE TABLE Employees (
+    employee_id INT PRIMARY KEY,
+    name VARCHAR(40),
+    location VARCHAR(40),
+    position VARCHAR(40)
+);
+
+INSERT INTO Employees VALUES(123456, 'Jack', 'London', 'Phone Sales Asst.');
+INSERT INTO Employees VALUES(654321, 'John', 'New York', 'Web Sales Asst.');
+INSERT INTO Employees VALUES(123321, 'Clara', 'Singapore', 'Direct Sales Asst.');
+INSERT INTO Employees VALUES(456654, 'Joanna', 'Sofia', 'Marketing Asst.');
+
+
+SELECT *
+FROM Employees;
+
+DROP TABLE Sales;
+
+CREATE TABLE Sales (
+    order_id INT PRIMARY KEY,
+    employee_id INT, 
+    product VARCHAR(40),
+    quantity INT,
+    price INT,
+    FOREIGN KEY(employee_id) REFERENCES Employees(employee_id) ON DELETE CASCADE
+);
+
+INSERT INTO Sales VALUES(1, 123456, 'TV Set', 1, 1000);
+INSERT INTO Sales VALUES(2, 123456, 'Laptop', 1, 699);
+INSERT INTO Sales VALUES(3, 123321, 'Smart Phone', 2, 399);
+INSERT INTO Sales VALUES(4, 654321, 'Fridge', 1, 500);
+
+SELECT employee_id AS sales_rep, product, quantity, price
+FROM Sales;
+
