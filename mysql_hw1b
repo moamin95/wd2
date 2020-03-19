@@ -1,0 +1,18 @@
+CREATE TABLE proclib_paylist(
+    idnum INT PRIMARY KEY,
+    gender VARCHAR(1),
+    jobcode VARCHAR(3),
+    salary VARCHAR(6),
+    birth VARCHAR(7),
+    hired VARCHAR(7)
+);
+
+
+INSERT INTO proclib_paylist VALUES(1639, 'F', 'TA1', '42260', '26JUN70', '28JAN91');
+INSERT INTO proclib_paylist VALUES(1065, 'M', 'ME3', '38090', '26JAN54', '07JAN92');
+INSERT INTO proclib_paylist VALUES(1400, 'M', 'ME1', '29769', '05NOV67', '16OCT90');
+INSERT INTO proclib_paylist VALUES(1561, 'M', '', '36514', '30NOV63', '07OCT87');
+INSERT INTO proclib_paylist VALUES(1221, 'F', 'FA3', '', '22SEP63', '04OCT94');
+
+SELECT * 
+FROM proclib_paylist;
